@@ -21,7 +21,7 @@ var tab1 = Titanium.UI.createTab({
 
 var label1 = Titanium.UI.createLabel({
 	color:'#999',
-	text:'fontSizeにはフォントの大きさ、fontFamilyにはフォントを指定する。fontFamilyに指定したフォントが存在しない場合、デフォルトのフォントが表示される',
+	text:L('window1'),
 	font:{fontSize:20,fontFamily:'Helvetica Neue',fontStyle:'italic',fontWeight:"bold"},
 	textAlign:'left',
 	width:'auto'
