@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="bumon">部門</string>
+	<string name="syohin">商品</string>
+	<string name="tanto">担当者</string>
+	<string name="close">閉じる</string>
+	<string name="bumon_view">部門一覧</string>
+	<string name="syohin_view">商品一覧</string>
+	<string name="tanto_view">担当者一覧</string>
+	<string name="tanto_add">担当者追加</string>
+	<string name="tanto_edit">担当者編集</string>
+	<string name="tanto_name">担当者名</string>
+	<string name="syohin_add">商品追加</string>
+	<string name="syohin_edit">商品編集</string>
+	<string name="syohin_scode">品番</string>
+	<string name="syohin_sname">商品名</string>
+	<string name="syohin_price">単価</string>
+	<string name="syohin_size">芯太さ</string>
+	<string name="button_add">登録</string>
+	<string name="button_update">変更</string>
+	<string name="button_delete">削除</string>
+	<string name="hint_tanto_name">ここに担当者名を入力</string>
+</resources>
