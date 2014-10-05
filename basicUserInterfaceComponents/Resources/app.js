@@ -80,27 +80,76 @@ win1.add(label4);
 win1.add(label5);
 
 //
-// create controls tab and root window
+// create base UI tab and root window
+// レイアウトモード：縦並び（vertical）
 //
-var win2 = Titanium.UI.createWindow({  
+var win2 = Titanium.UI.createWindow({
     title:'Tab 2',
-    backgroundColor:'#fff'
+    backgroundColor:'#fff',
+	layout:'vertical'
 });
-var tab2 = Titanium.UI.createTab({  
+var tab2 = Titanium.UI.createTab({
     icon:'KS_nav_ui.png',
     title:'Tab 2',
     window:win2
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+//
+// レイアウトモード：横並び（horizontal）
+//
+var horizontalView = Titanium.UI.createView({
+	backgroundColor:'#f00',
+	top:20,
+	height:100,
+	layout:'horizontal'
+});
+win2.add(horizontalView);
+
+var defaultView1 = Titanium.UI.createView({
+	backgroundColor:'#f00',
+	top:20,
+	width:'80%',
+	height:100
+});
+win2.add(defaultView1);
+
+var defaultView2 = Titanium.UI.createView({
+	backgroundColor:'#f00',
+	top:20,
+	width:'60%',
+	height:100
+});
+win2.add(defaultView2);
+
+var horizontalLabel1 = Titanium.UI.createLabel({
+	text:'Label1',
+	backgroundColor:'lime',
+	top:20,
+	left:20,
+	height:'auto'
 });
 
-win2.add(label2);
+var horizontalLabel2 = Titanium.UI.createLabel({
+	text:'Label2',
+	backgroundColor:'gray',
+	top:30,
+	left:20,
+	height:'FILL'
+});
+
+var horizontalLabel3 = Titanium.UI.createLabel({
+	text:'Label3',
+	backgroundColor:'blue',
+	top:40,
+	left:20,
+	height:'auto'
+});
+
+horizontalView.add(horizontalLabel1);
+horizontalView.add(horizontalLabel2);
+horizontalView.add(horizontalLabel3);
+
+
 
 
 
