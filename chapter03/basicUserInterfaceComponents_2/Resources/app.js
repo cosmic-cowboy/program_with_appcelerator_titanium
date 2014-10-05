@@ -45,7 +45,8 @@ win1.add(label2);
 //
 var win2 = Titanium.UI.createWindow({  
     title:'Tab 2',
-    backgroundColor:'#fff'
+    backgroundColor:'#fff',
+    layout:'vertical'
 });
 var tab2 = Titanium.UI.createTab({  
     icon:'KS_nav_ui.png',
@@ -53,23 +54,69 @@ var tab2 = Titanium.UI.createTab({
     window:win2
 });
 
-var label2 = Titanium.UI.createLabel({
+// 3-2 コンポーネント
+// createButton
+var button1 = Titanium.UI.createButton({
+	title:'ボタンをクリックしてください（タップじゃないの？）',
+	top:'20',
 	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+	borderRadius:5,
+	borderColor:"black"
 });
 
-win2.add(label2);
+// イベントハンドラの登録
+button1.addEventListener('click', function (e) {
+	alert('ボタンがクリックされました');
+});
+win2.add(button1);
 
+var button2 = Titanium.UI.createButton({
+	title:'ボタンをダブルクリックしてください（どうやるの？）',
+	top:'20',
+	color:'#999',
+	borderRadius:10,
+	borderColor:"red"
+});
+
+// イベントハンドラの登録
+button2.addEventListener('dblclick', function (e) {
+	alert('ボタンがダブルクリックされました');
+});
+
+win2.add(button2);
+var label3 = Titanium.UI.createLabel({
+	color:'#999',
+	text:('タップ前'),
+	textAlign:'left',
+	width:'100%'
+});
+var button3 = Titanium.UI.createButton({
+	title:'ボタンをタップしてください',
+	top:'20',
+	color:'#999',
+	// touchEnable : 'false'
+	borderRadius:15,
+	borderColor:"blue",
+	width:'100%'
+});
+
+// イベントハンドラの登録
+button3.addEventListener('touchstart', function (e) {
+	label3.text = 'タップ中';
+});
+button3.addEventListener('touchend', function (e) {
+	label3.text = 'タップ終了';
+});
+
+win2.add(button3);
+win2.add(label3);
 
 
 //
 //  add tabs
 //
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
+tabGroup.addTab(tab1);
+tabGroup.addTab(tab2);
 
 
 // open tab group
