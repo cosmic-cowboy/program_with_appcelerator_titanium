@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="welcome">%sへようこそ!</string>
+	<string name="menu">メニュー</string>
+	<string name="bumon">部門登録</string>
+	<string name="syohin">商品登録</string>
+	<string name="tanto">担当者登録</string>
+	<string name="close">閉じる</string>
+	<string name="bumon_view">部門一覧</string>
+	<string name="bumon_add">部門追加</string>
+	<string name="bumon_edit">部門編集</string>
+</resources>
