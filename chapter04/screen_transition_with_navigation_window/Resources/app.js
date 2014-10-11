@@ -44,7 +44,6 @@ if (Ti.version < 1.8) {
 
   var isTablet = checkTablet();
   console.log(isTablet);
-  alert(isTablet ? 'タブレット' : 'タブレットではない');
 
   var Window;
   if (isTablet) {
@@ -60,13 +59,3 @@ if (Ti.version < 1.8) {
   }
   new Window().open();
 })();
-
-var module = require('module');
-module.sayHello();
-// module.sayBye();  //undefined
-console.log(module.str1);
-console.log(module.str2);	// null
-
-
-
-
