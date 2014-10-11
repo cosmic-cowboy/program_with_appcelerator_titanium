@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-	<string name="welcome">%sへようこそ!</string>
 	<string name="menu">メニュー</string>
 	<string name="bumon">部門登録</string>
 	<string name="syohin">商品登録</string>
@@ -9,4 +8,9 @@
 	<string name="bumon_view">部門一覧</string>
 	<string name="bumon_add">部門追加</string>
 	<string name="bumon_edit">部門編集</string>
+	<string name="bumon_name">部門名</string>
+	<string name="button_add">登録</string>
+	<string name="button_update">変更</string>
+	<string name="button_delete">削除</string>
+	<string name="hint_bumon_name">ここに部門名を入力</string>
 </resources>

@@ -19,12 +19,7 @@ function ApplicationWindow() {
 	var addBtn = Ti.UI.createButton({
 		systemButton:Ti.UI.iPhone.SystemButton.ADD
 	});
-	var bumonAddView = new BumonAddWindow();
-	var bumonAddWin = Ti.UI.createWindow({
-		backgroundColor:'silver',
-		title : L('bumon')
-	});
-	bumonAddWin.add(bumonAddView);
+	var bumonAddWin = new BumonAddWindow();
 	addBtn.addEventListener('click', function () {
 		MyApp.navwin.openWindow(bumonAddWin,{animated:true});
 	});

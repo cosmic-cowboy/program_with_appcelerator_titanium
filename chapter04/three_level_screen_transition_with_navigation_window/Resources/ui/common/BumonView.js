@@ -1,23 +1,52 @@
-//FirstView Component Constructor
-function FirstView() {
-	//create object instance, a parasitic subclass of Observable
-	var self = Ti.UI.createView();
+function BumontView() {
 
-	//label using localization-ready strings from <app dir>/i18n/en/strings.xml
-	var label = Ti.UI.createLabel({
-		color:'#000000',
-		text:String.format(L('welcome'),'Titanium'),
-		height:'auto',
-		width:'auto'
-	});
-	self.add(label);
+	var BumonEditWindow = require('ui/common/BumonEditWindow');
 
-	//Add behavior for UI
-	label.addEventListener('click', function(e) {
-		alert(e.source.text);
+	var bumonView = Ti.UI.createView();
+
+	// グルーバルイベント
+	Ti.App.addEventListener('updateTables', function (event) {
+		tableView.setData(getData());
 	});
 
-	return self;
+	// テーブルビューの作成
+	var tableView = Ti.UI.createTableView();
+	tableView.setData(getData());
+	bumonView.add(tableView);
+
+	// TableViewの行クリックで編集画面
+	tableView.addEventListener('click', function (e) {
+		Ti.API.info(e.rowData.title);
+		Ti.API.info(e.rowData.rsId);
+		var bumonEditWin = BumonEditWindow(e);
+		MyApp.navwin.openWindow(bumonEditWin,{animated:true});
+	});
+
+	return bumonView;
 }
 
-module.exports = FirstView;
+module.exports = BumontView;
+
+function getData () {
+	var db = Ti.Database.open('sampleDB');
+	var rowList = [];
+
+	try{
+		db.execute('CREATE TABLE IF NOT EXISTS bumontb (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)');
+
+		var rs = db.execute('SELECT id, name FROM bumontb');
+		while(rs.isValidRow()){
+			var row = Ti.UI.createTableViewRow({
+				title: rs.fieldByName('name'),
+				rsId : rs.fieldByName('id')
+			});
+			rowList.push(row);
+			rs.next();
+		}
+		rs.close();
+	} catch(e) {
+		Ti.API.info(e);
+	}
+	db.close();
+	return rowList;
+}
