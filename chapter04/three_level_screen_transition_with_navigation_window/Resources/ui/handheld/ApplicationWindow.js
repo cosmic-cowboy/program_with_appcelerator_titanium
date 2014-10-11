@@ -1,26 +1,44 @@
 //Application Window Component Constructor
 function ApplicationWindow() {
 	//load component dependencies
+
+	var BumonAddWindow = require('ui/common/BumonAddWindow');
 	var BumonView = require('ui/common/BumonView');
 
-	// 部門登録画面
+	// 部門一覧画面
 	var bumonWin = Ti.UI.createWindow({
 		backgroundColor:'silver',
 		title : L('bumon_view')
 	});
 
-	// 部門登録画面のview
+	// 部門一覧画面のview
 	var bumonView = new BumonView();
 	bumonWin.add(bumonView);
 
 	// 部門登録ボタン
+	var addBtn = Ti.UI.createButton({
+		systemButton:Ti.UI.iPhone.SystemButton.ADD
+	});
+	var bumonAddView = new BumonAddWindow();
+	var bumonAddWin = Ti.UI.createWindow({
+		backgroundColor:'silver',
+		title : L('bumon')
+	});
+	bumonAddWin.add(bumonAddView);
+	addBtn.addEventListener('click', function () {
+		MyApp.navwin.openWindow(bumonAddWin,{animated:true});
+	});
+	bumonWin.rightNavButton = addBtn;
+
+
+	// 部門一覧ボタン
 	var bumonBtn = Ti.UI.createButton({
 		title:L('bumon'),
 		top:10,
 		width:'50%'
 	});
 	bumonBtn.addEventListener('click', function () {
-		navwin.openWindow(bumonWin,{animated:true});
+		MyApp.navwin.openWindow(bumonWin,{animated:true});
 	});
 
 
@@ -37,7 +55,7 @@ function ApplicationWindow() {
 		width:'50%'
 	});
 	syohinBtn.addEventListener('click', function () {
-		navwin.openWindow(syohinWin,{animated:true});
+		MyApp.navwin.openWindow(syohinWin,{animated:true});
 	});
 
 
@@ -53,7 +71,7 @@ function ApplicationWindow() {
 		width:'50%'
 	});
 	tantoBtn.addEventListener('click', function () {
-		navwin.openWindow(tantoWin,{animated:true});
+		MyApp.navwin.openWindow(tantoWin,{animated:true});
 	});
 
 	// メニュー画面
@@ -63,7 +81,7 @@ function ApplicationWindow() {
 		layout:'vertical'
 	});
 
-	var navwin = Ti.UI.iOS.createNavigationWindow({
+	MyApp.navwin = Ti.UI.iOS.createNavigationWindow({
 		window:menuWin
 	});
 	// 各画面に遷移するボタンを設置
@@ -71,7 +89,7 @@ function ApplicationWindow() {
 	menuWin.add(bumonBtn);
 	menuWin.add(syohinBtn);
 	menuWin.add(tantoBtn);
-	return navwin;
+	return MyApp.navwin;
 }
 
 //make constructor function the public component interface

@@ -14,6 +14,9 @@ if (Ti.version < 1.8) {
   alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');
 }
 
+// グローバル変数
+var MyApp={};
+
 // This is a single context application with multiple windows in a stack
 (function() {
   //render appropriate components based on the platform and form factor
