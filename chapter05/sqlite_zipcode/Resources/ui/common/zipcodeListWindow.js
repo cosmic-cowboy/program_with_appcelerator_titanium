@@ -1,74 +1,45 @@
 function zipcodeListWindow () {
 	
-	// 郵便番号登録画面を表示するWindow
+	// 郵便番号一覧画面を表示するWindow
 	var zipcodeListWin = Ti.UI.createWindow({
 		backgroundColor: '#fff',
 		title: "郵便番号一覧"
 	});
 
-	// // 担当者登録ページであることを表示するLabel
-	// var repAddLabel = Ti.UI.createLabel({
-	// 	color:'#999',
-	// 	top:10,
-	// 	text:L('tanto_name'),
-	// 	textAlign:'center',
-	// 	width:'auto'
-	// });
-	// zipcodeListWin.add(repAddLabel);
-
-	// // 担当者入力フィールド
-	// var repAddTextField = Ti.UI.createTextField({
-	// 	value:'',
-	// 	hintText: L('hint_tanto_name'),
-	// 	top:45,
-	// 	width:'60%',
-	// 	borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL
-	// });
-	// zipcodeListWin.add(repAddTextField);
-
-	// 登録ボタン
-	var zipcodeListButton = Ti.UI.createButton({
-		title:'郵便番号登録',
-		top:90,
-		width:'100',
-		left:110
+	// 郵便番号一覧取得のグローバルイベント
+	Ti.App.addEventListener('updateTables', function(){
+		// zipcodeView.setData(getData());
 	});
 
-	// // 担当者登録処理
-	// repAddButton.addEventListener('click',function (event) {
-
-	// 	// バリデーション
-	// 	if(repAddTextField.value.length === 0){
-	// 		alert('担当者を入力してください');
-	// 		repAddTextField.focus();
-	// 		return false;
-	// 	}
-
-	// 	// DBへの登録処理
-	// 	// データベースをオープン
-	// 	var db = Ti.Database.open('sampleDB');
-	// 	try{
-	// 		// テーブルがなければテーブルを作成
-	// 		db.execute('CREATE TABLE IF NOT EXISTS representative(id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT)');
-	// 		// 登録処理
-	// 		db.execute('INSERT INTO representative(name) VALUES(?)', repAddTextField.value);
-
-	// 	} catch(error){
-	// 		Ti.API.info(error);
-	// 	}
-	// 	// データベースをクローズ
-	// 	db.close();
-
-	// 	// あらかじめ設定されているイベントを呼び出す
-	// 	Ti.App.fireEvent('updateTables');
-	// 	// 登録処理が終わったら、ページを閉じる
-	// 	zipcodeListWin.close({animated:true});
-	// });
-
-	zipcodeListWin.add(zipcodeListButton);
+	// 郵便番号一覧
+	var zipcodeView = Ti.UI.createTableView();
+	// zipcodeView.setData(getData());
+	zipcodeListWin.add(zipcodeView);
 
 	return zipcodeListWin;
 }
 
 // 関数をエクスポート
 module.exports = zipcodeListWindow;
+
+var getData = function () {
+	var rowList = [];
+	var db = Ti.Database.open('zipdb');
+
+	var rs = db.execute('SELECT id, zipcode, pref, city, town FROM ziptb');
+	while(rs.isValidRow()){
+		var pref = rs.fieldByName('pref');
+		var city = rs.fieldByName('city');
+		var town = rs.fieldByName('town');
+		var address = pref + ' ' + city + ' ' + town;
+		var row = Ti.UI.createTableViewRow({
+			id:rs.fieldByName('id'),
+			title:address
+		});
+		rowList.push(row);
+		rs.next();
+	}
+	rs.close();
+	db.close();
+	return rowList;
+};

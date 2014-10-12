@@ -28,7 +28,7 @@ function searchWindow () {
 
 	// 登録ボタン
 	var searchButton = Ti.UI.createButton({
-		title:'郵便番号登録',
+		title:'郵便番号検索',
 		top:90,
 		width:'100',
 		left:110
