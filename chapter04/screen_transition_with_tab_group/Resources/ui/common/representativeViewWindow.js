@@ -1,5 +1,7 @@
 function representativeViewWindow () {
 
+	var RepresentativeEditWindow = require('ui/common/representativeEditWindow');
+
 	// 担当者を取得し、Viewとして表示する
 	var repViewWin = Ti.UI.createWindow({
 		title : L('tanto_view')
@@ -17,7 +19,8 @@ function representativeViewWindow () {
 	repView.add(tableView);
 
 	tableView.addEventListener('click',function (event) {
-		// TODO 編集ページ
+		var repEditWin = new RepresentativeEditWindow(event);
+		repViewWin.containingTab.open(repEditWin, {animated:true});
 	});
 	repViewWin.add(repView);
 	
