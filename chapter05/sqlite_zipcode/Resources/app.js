@@ -1,64 +1,50 @@
 // this sets the background color of the master UIView (when there are no windows/tab groups on it)
 Titanium.UI.setBackgroundColor('#000');
 
-// create tab group
+// インポート
+var RegisterWin = require('ui/common/registerWindow');
+var ZipcodeListWindow = require('ui/common/zipcodeListWindow');
+var searchWindow = require('ui/common/searchWindow');
+
+// タブグループ作成
 var tabGroup = Titanium.UI.createTabGroup();
 
-
 //
-// create base UI tab and root window
+// 郵便番号登録画面
 //
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
+var registerWin = new RegisterWin();
+var registerTab = Titanium.UI.createTab({
     icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
+    title:'登録',
+    window:registerWin
 });
-
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-win1.add(label1);
 
 //
-// create controls tab and root window
+// 郵便番号一覧画面
 //
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
+var zipcodeListWin = new ZipcodeListWindow();
+var zipcodeListTab = Titanium.UI.createTab({
+    icon:'KS_nav_views.png',
+    title:'一覧',
+    window:zipcodeListWin
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+//
+// 郵便番号検索画面
+//
+var searchWin = new searchWindow();
+var searchTab = Titanium.UI.createTab({
+    icon:'KS_nav_views.png',
+    title:'検索',
+    window:searchWin
 });
 
-win2.add(label2);
-
-
-
 //
-//  add tabs
+//  タブの追加
 //
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
+tabGroup.addTab(registerTab);
+tabGroup.addTab(zipcodeListTab);
+tabGroup.addTab(searchTab);
 
-
-// open tab group
+// タブグループを開く
 tabGroup.open();
