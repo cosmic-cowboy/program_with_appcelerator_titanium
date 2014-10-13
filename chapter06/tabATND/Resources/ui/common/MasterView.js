@@ -129,7 +129,10 @@ function MasterView () {
 					color:'#000',top:0, left:60, width:'auto', height:20
 				});
 				var row = Ti.UI.createTableViewRow({
-					height:60
+					height:60,
+					hasChild:true,
+					// hasDetail:true,	
+					eventId:rowdata.event_id,
 				});
 				// RowにLabelオブジェクトの追加
 				row.add(labelEventId);
@@ -141,6 +144,13 @@ function MasterView () {
 
 		}
 		tableView.setData(tableViewRowList);
+
+		// 取得したJSONデータを一覧表示するTableViewにadd behavior
+		tableView.addEventListener('click', function(event) {
+			view.fireEvent('itemSelected', {
+				eventId:event.rowData.eventId,
+			});
+		});
 	}
 
 }
