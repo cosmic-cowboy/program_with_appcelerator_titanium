@@ -1,64 +1,36 @@
 // this sets the background color of the master UIView (when there are no windows/tab groups on it)
 Titanium.UI.setBackgroundColor('#000');
 
-// create tab group
+// タブグループ
 var tabGroup = Titanium.UI.createTabGroup();
 
 
 //
-// create base UI tab and root window
+// 検索画面
 //
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
+var SearchWindow = require('ui/common/searchWindow');
+var searchWin = new SearchWindow();
+var searchTab = Titanium.UI.createTab({
     icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
+    title:'検索',
+    window:searchWin
 });
-
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-win1.add(label1);
 
 //
-// create controls tab and root window
+// 結果画面
 //
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
+var ResultListWindow = require('ui/common/resultListWindow');
+var resultListWin = new ResultListWindow();
+var resultListTab = Titanium.UI.createTab({
     icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
+    title:'結果',
+    window:resultListWin
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-win2.add(label2);
+//  タブ追加
+tabGroup.addTab(searchTab);
+tabGroup.addTab(resultListTab);
 
 
-
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
-
-
-// open tab group
+// タブを開く
 tabGroup.open();
