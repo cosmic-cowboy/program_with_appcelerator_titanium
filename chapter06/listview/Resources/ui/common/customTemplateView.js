@@ -55,11 +55,23 @@ function customTemplateView () {
 	for(var i = 1; i <= 10; i++){
 		data.push({
 			rowtitle:{text : 'Row ' + i},
-			subtitle:{text : 'Sub ' + i}
+			subtitle:{text : 'Sub ' + i},
+			properties : {
+				itemId : 'row' + i
+			}
 		});
 	}
 	var section = Ti.UI.createListSection({items : data});
 	listView.sections = [section];
+
+	listView.addEventListener('itemclick', function (event) {
+		alert(
+			"ItemId: " + event.itemId + "\n" +
+			"BindId: " + event.bindId + "\n" +
+			"Section Index: " + event.sectionIndex + ", Item Index: " + event.itemIndex
+		);
+	});
+
 	return listView;
 }
 
