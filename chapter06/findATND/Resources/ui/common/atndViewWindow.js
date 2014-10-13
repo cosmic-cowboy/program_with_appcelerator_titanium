@@ -5,15 +5,29 @@ function atndViewWindow(event){
 		backgroundColor: '#fff',
 		title: "ATND検索結果"
 	});
+	// RefreshControl
+	var refControl = Ti.UI.createRefreshControl({
+		tintColor:'blue'
+	});
 	// ATND検索結果を表示するテーブル
-	var atadView = Ti.UI.createTableView();
+	var atadView = Ti.UI.createTableView({
+		refreshControl:refControl
+	});
 	atndDataView = atadView;
 	atndViewWin.add(atadView);
 
 	// グローバルイベントを追加
 	var startPos = 1;
 	Ti.App.addEventListener('updateTables', function (event) {
-		loadData(event, startPos);
+		findword = encodeURIComponent(event.keyword);
+		loadData(startPos);
+	});
+
+	// RefreshControlのイベント追加
+	refControl.addEventListener('refreshstart', function () {
+		startPos = startPos　+ 7;
+		loadData(startPos);
+		refControl.endRefreshing();
 	});
 
 	return atndViewWin;
@@ -21,33 +35,35 @@ function atndViewWindow(event){
 
 module.exports = atndViewWindow;
 
-var loadData = function (event, startPos) {
-	if(event){
-		var url = 'http://api.atnd.org/events/' +
-			'?keyword=' + encodeURIComponent(event.keyword) +
-			'&start=' + startPos +
-			'&count=7&format=json';
+var loadData = function (startPos) {
 
-		// HTTP通信を行うHTTPClientオブジェクトを生成
-		var client = Ti.Network.createHTTPClient({
-			// 正常な応答があたっときの処理
-			onload  : function(e) {
-				var json = JSON.parse(this.responseText);
-				getData(json);
-			},
-			// タイムアウトを含むエラー応答があたっときの処理
-			onerror : function(e) {
-				Ti.API.debug(e.error);
-			},
-			// タイムアウトの時間指定
-			timeout : 5000
-		});
+	var url = 'http://api.atnd.org/events/' +
+		'?keyword=' + findword +
+		'&start=' + startPos +
+		'&count=7&format=json';
 
-		// 接続を開く
-		client.open("GET", url);
-		// リクエストを発行する
-		client.send();
-	}
+	Ti.API.info('url' + url);
+
+	// HTTP通信を行うHTTPClientオブジェクトを生成
+	var client = Ti.Network.createHTTPClient({
+		// 正常な応答があたっときの処理
+		onload  : function(e) {
+			var json = JSON.parse(this.responseText);
+			getData(json);
+		},
+		// タイムアウトを含むエラー応答があたっときの処理
+		onerror : function(e) {
+			Ti.API.debug(e.error);
+		},
+		// タイムアウトの時間指定
+		timeout : 5000
+	});
+
+	// 接続を開く
+	client.open("GET", url);
+	// リクエストを発行する
+	client.send();
+	
 };
 
 var getData = function(jsonData){
@@ -56,8 +72,6 @@ var getData = function(jsonData){
 	if(jsonData){
 		for(var i=0; i<jsonData.results_returned; i++){
 			var rowdata = jsonData.events[i].event;
-
-			Ti.API.info('rowdata.event_id:' + rowdata.event_id);
 
 			// セルの作成
 			var labelEventId = Ti.UI.createLabel({

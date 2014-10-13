@@ -15,11 +15,13 @@ var findAtndTab = Titanium.UI.createTab({
     window:findAtndWin
 });
 
+// よくないけど暫定
+var atndDataView;
+var findword = '';
+
 //
 // ATND検索結果タブ
 //
-// よくないけど暫定
-var atndDataView;
 var ATNDViewWindow = require('ui/common/atndViewWindow');
 var atndViewWin = new ATNDViewWindow();
 var atndViewTab = Titanium.UI.createTab({
