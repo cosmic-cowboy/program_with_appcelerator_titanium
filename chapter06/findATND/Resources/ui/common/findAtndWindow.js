@@ -36,7 +36,7 @@ function findAtndWindow(){
 			return false;
 		}
 		// イベントサーチAPIを発行
-		loadData(keyword);
+		Ti.App.fireEvent('updateTables', {keyword:keyword});
 	});
 
 	findAtndWin.add(findButton);
@@ -44,34 +44,3 @@ function findAtndWindow(){
 }
 
 module.exports = findAtndWindow;
-
-var loadData = function(keyword) {
-
-	var url = 'http://api.atnd.org/events/?keyword=' + encodeURIComponent(keyword) +'&count=7&format=json';
-
-	// HTTP通信を行うHTTPClientオブジェクトを生成
-	var client = Ti.Network.createHTTPClient({
-		// 正常な応答があたっときの処理
-		onload  : function(e) {
-			var json = JSON.parse(this.responseText);
-			Ti.App.fireEvent('updateTables', {json:json});
-		},
-		// タイムアウトを含むエラー応答があたっときの処理
-		onerror : function(e) {
-			Ti.API.debug(e.error);
-		},
-		// タイムアウトの時間指定
-		timeout : 5000
-	});
-
-	// 接続を開く
-	client.open("GET", url);
-	// リクエストを発行する
-	client.send();
-
-
-
-
-
-
-};

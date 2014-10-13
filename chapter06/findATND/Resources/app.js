@@ -18,6 +18,8 @@ var findAtndTab = Titanium.UI.createTab({
 //
 // ATND検索結果タブ
 //
+// よくないけど暫定
+var atndDataView;
 var ATNDViewWindow = require('ui/common/atndViewWindow');
 var atndViewWin = new ATNDViewWindow();
 var atndViewTab = Titanium.UI.createTab({

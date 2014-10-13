@@ -5,29 +5,59 @@ function atndViewWindow(event){
 		backgroundColor: '#fff',
 		title: "ATND検索結果"
 	});
-
-	// グローバルイベントを追加
-	Ti.App.addEventListener('updateTables', function (event) {
-		atadView.setData(getData(event));
-		tabGroup.setActiveTab(1);
-	});
-
 	// ATND検索結果を表示するテーブル
 	var atadView = Ti.UI.createTableView();
+	atndDataView = atadView;
 	atndViewWin.add(atadView);
+
+	// グローバルイベントを追加
+	var startPos = 1;
+	Ti.App.addEventListener('updateTables', function (event) {
+		loadData(event, startPos);
+	});
 
 	return atndViewWin;
 }
 
 module.exports = atndViewWindow;
 
-var getData = function(event){
-	var tableViewRowList = [];
+var loadData = function (event, startPos) {
 	if(event){
-		var jsonData = event.json;
+		var url = 'http://api.atnd.org/events/' +
+			'?keyword=' + encodeURIComponent(event.keyword) +
+			'&start=' + startPos +
+			'&count=7&format=json';
+
+		// HTTP通信を行うHTTPClientオブジェクトを生成
+		var client = Ti.Network.createHTTPClient({
+			// 正常な応答があたっときの処理
+			onload  : function(e) {
+				var json = JSON.parse(this.responseText);
+				getData(json);
+			},
+			// タイムアウトを含むエラー応答があたっときの処理
+			onerror : function(e) {
+				Ti.API.debug(e.error);
+			},
+			// タイムアウトの時間指定
+			timeout : 5000
+		});
+
+		// 接続を開く
+		client.open("GET", url);
+		// リクエストを発行する
+		client.send();
+	}
+};
+
+var getData = function(jsonData){
+	var tableViewRowList = [];
+	Ti.API.info('jsonData:' + jsonData);
+	if(jsonData){
 		for(var i=0; i<jsonData.results_returned; i++){
 			var rowdata = jsonData.events[i].event;
 
+			Ti.API.info('rowdata.event_id:' + rowdata.event_id);
 
 			// セルの作成
 			var labelEventId = Ti.UI.createLabel({
@@ -62,6 +92,6 @@ var getData = function(event){
 		}
 
 	}
-
-	return tableViewRowList;
+	atndDataView.setData(tableViewRowList);
+	tabGroup.setActiveTab(1);
 };
