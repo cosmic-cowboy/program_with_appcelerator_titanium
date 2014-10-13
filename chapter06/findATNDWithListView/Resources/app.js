@@ -4,6 +4,8 @@ Titanium.UI.setBackgroundColor('#000');
 // タブグループ
 var tabGroup = Titanium.UI.createTabGroup();
 
+// 共通で利用する変数
+var findword;
 
 //
 // 検索画面
