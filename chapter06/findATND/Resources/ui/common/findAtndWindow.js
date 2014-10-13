@@ -53,7 +53,8 @@ var loadData = function(keyword) {
 	var client = Ti.Network.createHTTPClient({
 		// 正常な応答があたっときの処理
 		onload  : function(e) {
-			Ti.API.info("Received: " + this.responseText);
+			var json = JSON.parse(this.responseText);
+			Ti.App.fireEvent('updateTables', {json:json});
 		},
 		// タイムアウトを含むエラー応答があたっときの処理
 		onerror : function(e) {
