@@ -39,12 +39,13 @@ function searchWindow() {
 	});
 
 	searchButton.addEventListener('click',function(e) {
-		findword = textField1.value;
+		findword = searchTextField.value;
 		if (findword.length === 0 ) {
 			alert( "検索ワードを入力してください" );
 			return false;
 		}
-		// fetchData();
+		Ti.App.fireEvent('updateTables');
+		tabGroup.setActiveTab(1);
 	});
 
 	searchWin.add(searchButton);
