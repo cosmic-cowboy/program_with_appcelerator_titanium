@@ -43,10 +43,30 @@ var iOSViewTab = Titanium.UI.createTab({
 	window:iOSViewWindow
 });
 
+//
+// カスタムテンプレート
+// 
+// Window
+var customViewWindow = Titanium.UI.createWindow({
+    title:'カスタムテンプレート',
+    backgroundColor:'#fff'
+});
+// View
+var CustomTemplateView = require('ui/common/customTemplateView');
+var customView = new CustomTemplateView();
+customViewWindow.add(customView);
+// タブ
+var customViewTab = Titanium.UI.createTab({
+	icon:'KS_nav_views.png',
+	title:'カスタム',
+	window:customViewWindow
+});
+
 
 // タブ追加
 tabGroup.addTab(listViewTab);
 tabGroup.addTab(iOSViewTab);
+tabGroup.addTab(customViewTab);
 
 // タブを開く
 tabGroup.open();
