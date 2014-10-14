@@ -1,14 +1,10 @@
 <Alloy>
 	<TabGroup>
-		<Tab title="Tab 1" icon="KS_nav_ui.png">
-			<Window class="container" title="Tab 1">
-				<Label>I am Window 1</Label>
-			</Window>
+		<Tab title="やるべきこと" id="taskTab" icon="KS_nav_ui.png">
+			<Require type="view" src="task"/>
 		</Tab>
-		<Tab title="Tab 2" icon="KS_nav_views.png">
-			<Window class="container" title="Tab 2">
-				<Label>I am Window 2</Label>
-			</Window>
+		<Tab title="完了" id="doneTab"  icon="KS_nav_views.png">
+			<Require type="view" src="done"/>
 		</Tab>
 	</TabGroup>
 </Alloy>
