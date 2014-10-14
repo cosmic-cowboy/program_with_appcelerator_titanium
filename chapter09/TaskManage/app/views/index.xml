@@ -1,4 +1,5 @@
 <Alloy>
+	<Collection src="task" />
 	<TabGroup>
 		<Tab title="やるべきこと" id="taskTab" icon="KS_nav_ui.png">
 			<Require type="view" src="task"/>

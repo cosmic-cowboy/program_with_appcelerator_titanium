@@ -1,4 +1,33 @@
 
-".container" : {
-  
+"#addButton" : {
+	systemButton : Ti.UI.iPhone.SystemButton.COMPOSE
+}
+
+"#textContainer" : {
+	width : Ti.UI.FILL,
+	height : Ti.UI.SIZE,
+	top : 6,
+	right : 11,
+	bottom : 6,
+	left : 11,
+	layout : "horizontal"
+}
+"#what" : {
+	font : {
+		fontSize : 18,
+		fontWeight : "bold"
+	}
+}
+"#limitDate" : {
+	left : 5,
+	font : {
+		fontSize : 14
+	}
+}
+"#importance" : {
+	left : 5,
+	color : "#f00",
+	font : {
+		fontSize : 14
+	}
 }
