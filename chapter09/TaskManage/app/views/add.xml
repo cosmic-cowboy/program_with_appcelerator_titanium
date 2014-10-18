@@ -1,4 +1,16 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window id="addWin" title="追加" tabBarHidden="true">
+		<View id="addWrap" layout="vertical">
+			<Label>何を</Label>
+			<TextField id="inputWhat"></TextField>
+			<Label>詳しく言うと</Label>
+			<TextArea id="inputDetail"></TextArea>
+			<Label>いつまでに</Label>
+			<TextField id="inputLimitDate"></TextField>
+			<Label>重要度</Label>
+			<Slider id="inputImportance" onChange="showSliderValue"></Slider>
+			<Label id="sliderValue"></Label>
+			<Button id="saveTask" title="保存する" onClick="saveTask"></Button>
+		</View>
+	</Window>
 </Alloy>

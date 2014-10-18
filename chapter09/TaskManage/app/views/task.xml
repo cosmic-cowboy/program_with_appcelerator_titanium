@@ -1,9 +1,9 @@
 <Alloy>
 	<Window class="container" title="やるべきこと">
 		<RightNavButton>
-			<Button title="新規" id="addButton" />
+			<Button title="新規" onClick="addTask" id="addButton" />
 		</RightNavButton>
-		<ListView id="tasks" defaultItemTemplate="doneTemplate" >
+		<ListView id="tasks" defaultItemTemplate="doneTemplate" onItemClick="editTask">
 			<Templates>
 				<ItemTemplate name="doneTemplate">
 					<View id="textContainer">

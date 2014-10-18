@@ -1,4 +1,56 @@
+"#addWin": {
+  backgroundColor: "#FFFFFF"
+}
+"Label": {
+  font: {
+    fontSize: 16,
+    fontWeight: "bold"
+  },
+  textAlign: "left",
+  color: "#333333",
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  top: 11,
+  bottom: 11,
+  left: 11
+}
+"#inputDetail": {
+  font: {
+    fontSize: 16
+  },
+  height: 96,
+  right: 11,
+  bottom: 11,
+  left: 11,
+  borderWidth: 1,
+  borderColor: "#CCCCCC"
+}
+"#saveTask": {
+  width: Ti.UI.FILL,
+  right: 11,
+  bottom: 11,
+  left: 11
+}
+"TextField": {
+  font: {
+    fontSize: 16,
+    fontWeight: "bold"
+  },
+  textAlign: "left",
+  color: "#333333",
+  width: "70%",
+  height: Ti.UI.SIZE,
+  borderWidth: 1,
+  borderColor: "#CCCCCC"
+}
+"#inputLimitDate": {
+  hintText:"2014-06-11",
+  keyboardType:Titanium.UI.KEYBOARD_NUMBERS_PUNCTUATION
+}
 
-".container" : {
-  
+"Slider": {
+  width: "70%",
+  min:0,
+  max:100,
+  value:50		// 初期値
 }
