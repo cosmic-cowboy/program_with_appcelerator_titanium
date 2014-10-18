@@ -1,4 +1,20 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window id="editWin" title="編集" tabBarHidden="true">
+		<ScrollView id="addWrap" layout="vertical">
+
+			<Label>何を</Label>
+			<TextField id="inputWhat"></TextField>
+			<Label>詳しく言うと</Label>
+			<TextArea id="inputDetail"></TextArea>
+			<Label>いつまで</Label>
+			<TextField id="inputLimitDate"></TextField>
+			<Label>重要度</Label>
+			<Slider id="inputImportance" onChange="showSliderValue"></Slider>
+			<Label id="sliderValue"></Label>
+			<Button id="saveTask" title="保存する" onClick="saveTask" />
+			<Button id="finishTask" title="完了にする" onClick="finishTask" />
+			<Button id="deleteTask" title="削除する" onClick="deleteTask" />
+
+		</ScrollView>
+	</Window>
 </Alloy>

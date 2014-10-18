@@ -16,6 +16,34 @@ function addTask(){
 
 }
 
+function editTask (e) {
+	var editWin, index;
+
+	if(Alloy.Globals.currentTab === undefined){
+
+		index = Alloy.createController("index");
+		Alloy.Globals.currentTab = index.getView("taskTab");
+
+	}
+
+	var mTask = Alloy.Collections.task.where({
+		alloy_id : e.itemId
+	})[0];
+
+	console.log(e.itemId);
+	console.log(mTask.get('alloy_id'));
+
+	var arg = {
+		e_id : e.itemId,
+		what : mTask.get('what'),
+		detail : mTask.get('detail'),
+		limitDate : mTask.get('limitDate'),
+		importance : mTask.get('importance')
+	};
+	editWin = Alloy.createController("edit", arg).getView("editWin");
+
+	Alloy.Globals.currentTab.open(editWin);
+}
 
 function transformFunction (model) {
 	var transform, limitTime, importance;
