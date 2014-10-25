@@ -1,4 +1,25 @@
 <Alloy>
-	<Window class="container">
-	</Window>
+	<Window title="やったこと">
+		<ListView id="dones" defaultItemTemplate="doneTemplate">
+			<Templates>
+				<ItemTemplate name="doneTemplate">
+					<View id="textContainer">
+	        			<Label bindId="what" id="what" />
+	      				<Label bindId="limitDate" id="limitDate" />
+	      				<Label bindId="importance" id="importance" />
+					</View>
+				</ItemTemplate>
+			</Templates>
+
+	    	<ListSection dataCollection="task" dataTransform="transformFunction" dataFilter="filterFunction">
+				<ListItem template="{doneTemplate}" 
+					what:text="{what}" 
+					limitDate:text="{limitDate}"
+					importance:text="{importance}"
+					properties:itemId="{alloy_id}"
+				/>
+	    	</ListSection>
+
+		</ListView>
+    </Window>
 </Alloy>
