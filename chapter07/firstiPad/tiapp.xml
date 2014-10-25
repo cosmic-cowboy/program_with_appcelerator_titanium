@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ti:app xmlns:ti="http://ti.appcelerator.org">
+<?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
 	<id>com.slgerkamp.firstipad</id>
 	<name>firstiPad</name>
 	<version>1.0</version>
 	<publisher>not specified</publisher>
-	<url></url>
-	<description></description>
+	<url/>
+	<description/>
 	<copyright>not specified</copyright>
 	<icon>appicon.png</icon>
 	<fullscreen>false</fullscreen>
@@ -59,4 +58,6 @@
 		<target device="mobileweb">false</target>
 	</deployment-targets>
 	<sdk-version>3.4.0.GA</sdk-version>
+<plugins><plugin version="1.0">ti.alloy</plugin>
+</plugins>
 </ti:app>
