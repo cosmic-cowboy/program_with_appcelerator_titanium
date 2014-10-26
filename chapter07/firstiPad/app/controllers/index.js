@@ -16,24 +16,14 @@ var items = _.map(jsondata.photos.photo, function(element){
 // $.masterList.sections[0].setItems(items);
 
 
-var label = Ti.UI.createLabel({
-	text:"owner-id",
-	color:"red",
-	font:{fontSize:16}
-});
-var popover = Ti.UI.iPad.createPopover({
-	contentView:label
-});
 
 function showPic(e){
 	$.detailImage.image = items[e.itemIndex][0].smallPic.image;
-	label.text =  'owner-id:' + items[e.itemIndex][0].owner.text;
+	$.detailImage.text = 'owner-id:' + items[e.itemIndex][0].owner.text;
 }
 
 function openPopover(e){
-	// var popover = Alloy.createController("popover").getView();
-	console.log(e.source);
-	// label.text()
+	var popover = Alloy.createController("popover").getView();
 	popover.show({view:$.detailImage});
 }
 
