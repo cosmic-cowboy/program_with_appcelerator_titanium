@@ -1,4 +1,8 @@
 
+Alloy.Globals.quantityField=$.quantityField;
+Alloy.Globals.nameField=$.nameField;
+Alloy.Globals.dateField=$.dateField;
+
 // popoverは抽象化できるのでは？
 function popoverQuantity(){
 	var popover = Alloy.createController('quantity_popover').getView();

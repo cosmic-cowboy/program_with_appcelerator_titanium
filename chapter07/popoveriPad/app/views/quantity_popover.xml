@@ -1,7 +1,7 @@
 <Alloy>
 	<Popover>
 		<ContentView>
-			<TableView id="quantity_table" />
+			<TableView id="quantity_table" class="container" onClick="setQuantity"/>
 		</ContentView>
 	</Popover>
 </Alloy>
