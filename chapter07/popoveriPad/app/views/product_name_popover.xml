@@ -1,7 +1,7 @@
 <Alloy>
 	<Popover>
 		<ContentView>
-			<Label id="popoverownerid">owner-id:</Label>
+			<Picker id="picker" onChange="setProductName" />
 		</ContentView>
 	</Popover>
 </Alloy>
