@@ -1,7 +1,7 @@
 <Alloy>
 	<Popover>
 		<ContentView>
-			<Label id="popoverownerid">owner-id:</Label>
+			<Picker id="picker" onChange="setProductDate" type="Ti.UI.PICKER_TYPE_DATE" minDate="2014,4,1" maxDate="May 1, 2014 12:00:00" value="2014-04-15T12:00:00" />
 		</ContentView>
 	</Popover>
 </Alloy>
