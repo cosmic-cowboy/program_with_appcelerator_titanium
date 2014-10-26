@@ -1,0 +1,7 @@
+<Alloy>
+	<Popover>
+		<ContentView>
+			<Label id="popoverownerid">owner-id:</Label>
+		</ContentView>
+	</Popover>
+</Alloy>

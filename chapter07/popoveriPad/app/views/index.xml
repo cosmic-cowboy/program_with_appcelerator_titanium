@@ -3,15 +3,15 @@
 		<Window class="detail">
 			<View id="quantity" class="popoverArea">
 				<Label class="popoverLabel">数量</Label>
-				<TextField class="popoverTextField"></TextField>
+				<TextField id="quantityField" class="popoverTextField" onClick="popoverQuantity"></TextField>
 			</View>
 			<View id="productName" class="popoverArea">
 				<Label class="popoverLabel">商品名</Label>
-				<TextField class="popoverTextField"></TextField>
+				<TextField id="nameField"  class="popoverTextField" onClick="popoverName"></TextField>
 			</View>
 			<View id="productDate" class="popoverArea">
 				<Label class="popoverLabel">日付</Label>
-				<TextField class="popoverTextField"></TextField>
+				<TextField id="dateField"  class="popoverTextField" onClick="popoverDate"></TextField>
 			</View>
 		</Window>
 	</NavigationWindow>

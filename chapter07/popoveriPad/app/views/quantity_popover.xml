@@ -1,0 +1,7 @@
+<Alloy>
+	<Popover>
+		<ContentView>
+			<TableView id="quantity_table" />
+		</ContentView>
+	</Popover>
+</Alloy>
