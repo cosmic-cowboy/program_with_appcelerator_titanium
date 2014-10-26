@@ -26,7 +26,7 @@
         <!-- Second window is the detailView -->
 		<NavigationWindow id="detailNav">
 			<Window id="detail" background="white">
-				<ImageView id="detailImage" text="Detail View"/>
+				<ImageView id="detailImage" text="Detail View" onClick="openPopover"/>
 			</Window>
 		</NavigationWindow>
 	</SplitWindow>
