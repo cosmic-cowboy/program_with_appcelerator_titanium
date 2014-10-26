@@ -1,5 +1,33 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+	<SplitWindow >
+        <!-- First window is the masterView -->
+		<NavigationWindow id="masterNav">
+			<Window id="master" background="gray">
+				<ListView id="masterList" defaultItemTemplate="myTemplate" onItemclick="showPic">
+					<Templates>
+						<ItemTemplate name="myTemplate">
+							<View id="textContainer">
+								<ImageView bindId="smallPic" id="smallPic"/>
+								<Label bindId="title" id="title"/>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="masterListSection">
+						<ListItem owner:text="8054100@N08" smallPic:image="http://farm4.staticflickr.com/3945/15630317922_d5b3cd98e6.jpg" title:text="RTSV_Fall2014_Prj27_029.jpg" />
+						<ListItem owner:text="79312019@N05" smallPic:image="http://farm4.staticflickr.com/3952/15630318412_85f863eeea.jpg" title:text="\U30ab\U30e1\U30e9\U30ed\U30fc\U30eb-337" />
+						<ListItem owner:text="55076496@N04" smallPic:image="http://farm4.staticflickr.com/3951/15630318422_33a3076188.jpg" title:text="IMG_0370" />
+					</ListSection>
+
+				</ListView>
+
+			</Window>
+		</NavigationWindow>
+
+        <!-- Second window is the detailView -->
+		<NavigationWindow id="detailNav">
+			<Window id="detail" background="white">
+				<ImageView id="detailImage" text="Detail View"/>
+			</Window>
+		</NavigationWindow>
+	</SplitWindow>
 </Alloy>

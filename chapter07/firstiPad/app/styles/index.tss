@@ -1,15 +1,27 @@
-".container": {
-	backgroundColor:"white"
+"#textContainer": {
+	height:'90dp'
 }
 
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
-}
-
-"#label": {
+"#title": {
+	left: '90dp',
+	top: '30dp',
 	font: {
-		fontSize: 12
-	}
+		fontSize: '12dp',
+		fontWeight:'bold'
+	},
+	Color:'blue'
 }
+
+"#smallPic": {
+	top   : '5dp',
+	left  : '5dp',
+	width : '75dp', 
+	height: '75dp'				
+}
+
+
+
+"#detailImage": {
+	width : Ti.UI.FILL
+}
+
