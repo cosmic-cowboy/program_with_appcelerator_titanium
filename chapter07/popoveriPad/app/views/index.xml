@@ -1,5 +1,18 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+	<NavigationWindow>
+		<Window class="detail">
+			<View id="quantity" class="popoverArea">
+				<Label class="popoverLabel">数量</Label>
+				<TextField class="popoverTextField"></TextField>
+			</View>
+			<View id="productName" class="popoverArea">
+				<Label class="popoverLabel">商品名</Label>
+				<TextField class="popoverTextField"></TextField>
+			</View>
+			<View id="productDate" class="popoverArea">
+				<Label class="popoverLabel">日付</Label>
+				<TextField class="popoverTextField"></TextField>
+			</View>
+		</Window>
+	</NavigationWindow>
 </Alloy>

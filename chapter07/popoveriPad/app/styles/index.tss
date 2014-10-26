@@ -1,15 +1,29 @@
-".container": {
-	backgroundColor:"white"
+
+".detail": {
+	backgroundColor:"white",
+	layout:"vertical"
 }
 
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
+".popoverArea": {
+	backgroundColor:"#ddd",
+	top: 10,
+	height: 40,
+	width: "90%",
+	layout:"horizontal"
 }
 
-"#label": {
-	font: {
-		fontSize: 12
-	}
+".popoverLabel": {
+	top:8,
+	left:10,
+	width:"auto"
+}
+
+
+".popoverTextField": {
+	keyboardType: Titanium.UI.KEYBOARD_DEFAULT,
+	borderStyle: Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: 5,
+	left: 10,
+	width: 250,
+	clearButtonMode : Titanium.UI.INPUT_BUTTONMODE_ONFOCUS
 }
