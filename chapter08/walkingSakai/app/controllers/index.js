@@ -13,8 +13,9 @@ function readXML(){
 	}
 }
 
-function doClick(e) {
-    readXML();
+function report(evt) {
+    Ti.API.info("Annotation " + evt.title + " clicked, id: " + evt.annotation.myid);
 }
+
 
 $.index.open();

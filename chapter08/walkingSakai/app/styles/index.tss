@@ -2,14 +2,30 @@
 	backgroundColor:"white"
 }
 
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
+"#mapview": {
+	region: {
+		latitude:36.729269,
+		longitude:137.014995,
+		latitudeDelta:0.02,
+		longitudeDelta:0.02
+	},
+	animate:true,
+	regionFit:true,
+	userLocation:true
 }
 
-"#label": {
-	font: {
-		fontSize: 12
-	}
+"#zuiryujitemple": {
+	latitude:36.735537,
+	longitude:137.009818,
+	title:"国宝　瑞龍寺",
+	subtitle:'加賀藩二代藩主前田利長公の菩提寺',
+	pincolor: Alloy.Globals.Map.ANNOTATION_GREEN
 }
+
+"#soujijitemple": {
+	latitude:36.737962,
+	longitude:137.009754,
+	title:"高野山真言宗　総持寺",
+	subtitle:'観音信仰の拠点として「かんのんでら」とも呼ばれる',
+	pincolor: Alloy.Globals.Map.ANNOTATION_PURPLE
+} 

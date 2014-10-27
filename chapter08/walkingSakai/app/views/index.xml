@@ -1,5 +1,8 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<Module id="mapview" module="ti.map" method="createView" onClick="report">
+			<Annotation id='zuiryujitemple' myid='1'/>
+			<Annotation id='soujijitemple'  myid='2'/>
+		</Module>
 	</Window>
 </Alloy>
