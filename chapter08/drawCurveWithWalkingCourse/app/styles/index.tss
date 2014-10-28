@@ -1,0 +1,43 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"#mapview": {
+	animate:true,
+	regionFit:true,
+	userLocation:true
+}
+
+"#mapToolBar" : {
+	bottom:0,
+	borderTop:true,
+	borderBottom:false
+}
+
+".itemButton" : {
+	style : Titanium.UI.iPhone.SystemButton.BORDERED	
+}
+"#satellite" : {
+	title:"衛星",
+	type:Alloy.Globals.Map.SATELLITE_TYPE
+}
+
+"#standard" : {
+	title:"標準",
+	type:Alloy.Globals.Map.STANDARD_TYPE
+}
+
+"#hybrid" : {
+	title:"ハイブリッド",
+	type:Alloy.Globals.Map.HYBRID_TYPE
+}
+
+"#zoomin" : {
+	title:"+",
+	zoom:1
+}
+
+"#zoomout" : {
+	title:"-",
+	zoom:-1
+}

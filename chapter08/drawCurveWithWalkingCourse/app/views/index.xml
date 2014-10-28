@@ -1,0 +1,21 @@
+<Alloy>
+	<Window class="container">
+		<Module id="mapview" module="ti.map" method="createView">
+		</Module>
+		<Toolbar platform="ios" id="mapToolBar">
+			<Items>
+				<FlexSpace/>
+				<Button id="satellite" class="itemButton" onClick="changeMap"></Button>
+				<FlexSpace/>
+				<Button id="standard" class="itemButton" onClick="changeMap"></Button>
+				<FlexSpace/>
+				<Button id="hybrid" class="itemButton" onClick="changeMap"></Button>
+				<FlexSpace/>
+				<Button id="zoomin" class="itemButton" onClick="changeMap"></Button>
+				<FlexSpace/>
+				<Button id="zoomout" class="itemButton" onClick="changeMap"></Button>
+				<FlexSpace/>
+			</Items>
+		</Toolbar>
+	</Window>
+</Alloy>
