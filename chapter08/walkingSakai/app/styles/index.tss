@@ -29,3 +29,9 @@
 	subtitle:'観音信仰の拠点として「かんのんでら」とも呼ばれる',
 	pincolor: Alloy.Globals.Map.ANNOTATION_PURPLE
 } 
+
+"#mapToolBar" : {
+	bottom:0,
+	borderTop:true,
+	borderBottom:false
+}

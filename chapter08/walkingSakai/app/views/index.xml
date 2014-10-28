@@ -4,5 +4,6 @@
 			<Annotation id='zuiryujitemple' myid='1'/>
 			<Annotation id='soujijitemple'  myid='2'/>
 		</Module>
+		<Toolbar platform="ios" id="mapToolBar"></Toolbar>
 	</Window>
 </Alloy>
