@@ -1,0 +1,2534 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<GI timeStamp="2013-04-24T16:26:43" version="1.0"
+xsi:noNamespaceSchemaLocation="denshikokudo_XML.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<exchangeMetadata>
+<datasetCitation>
+<title>walk</title>
+<date>
+<date>2013-04-24T16:26:43</date>
+<dateType>creation</dateType>
+</date>
+<citedResponsibleParty>
+<organizationName>partyName</organizationName>
+<contactInfo>
+<onlineResource>
+<linkage>partyUrl</linkage>
+<name>urlName</name>
+</onlineResource>
+<address>
+<electronicMailAddress>emailAddress</electronicMailAddress>
+</address>
+</contactInfo>
+<role>resourceProvider</role>
+</citedResponsibleParty>
+</datasetCitation>
+<encodingRule>
+<encodingRuleCitation>
+<title>電子国土Webシステム用XMLデータ仕様書</title>
+<date>
+<date>2008-03-31</date>
+</date>
+</encodingRuleCitation>
+<toolName>cjpShapeConv</toolName>
+<toolVersion>1.0.0</toolVersion>
+</encodingRule>
+</exchangeMetadata>
+<dataset>
+<layer>
+<name>walk</name>
+<description>description</description>
+<style>
+<name>style1</name>
+<type>string</type>
+<displaylevel>all</displaylevel>
+<display>on</display>
+<transparent>off</transparent>
+<selection>on</selection>
+<rgb>255,100,255</rgb>
+<style kind="system">solid</style>
+<width>3,static</width>
+</style>
+<Curve id="ls0">
+<GM_Curve id="gmcurve0">
+<CRS uuidref="JGD2000 / (L, B)"/>
+<proxy idref="gmcurve0"/>
+<proxy idref="_gmcurve0">
+<GM_OrientableCurve id="_gmcurve0">
+<CRS/>
+<proxy idref="gmcurve0"/>
+<proxy idref="_gmcurve0"/>
+<orientation>-</orientation>
+<primitive idref="gmcurve0"/>
+</GM_OrientableCurve>
+</proxy>
+<orientation>+</orientation>
+<primitive idref="gmcurve0"/>
+<segment>
+<GM_LineString>
+<interpolation>linear</interpolation>
+<controlPoint>
+<column>
+<direct>
+<coordinate>136.132996 36.230200</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.132841 36.230435</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.132686 36.230436</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.132553 36.230408</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.132261 36.230614</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131908 36.230624</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131813 36.230611</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131670 36.230641</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131637 36.230717</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131642 36.230792</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131509 36.231162</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131476 36.231542</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131334 36.231766</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131233 36.232093</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131303 36.232212</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131265 36.232414</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131149 36.232488</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130999 36.232523</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131065 36.232760</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130857 36.232713</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130504 36.233025</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130048 36.233206</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129520 36.233295</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129186 36.233469</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128829 36.233574</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128349 36.233974</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128223 36.234152</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128030 36.234330</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127760 36.234818</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127340 36.235389</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127237 36.235677</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126886 36.235876</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126509 36.236257</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126509 36.236340</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126364 36.236573</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126371 36.236641</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126451 36.236813</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126216 36.237033</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126333 36.237166</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126433 36.237490</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126320 36.237505</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126511 36.237667</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126572 36.237858</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126763 36.237954</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126999 36.238134</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127392 36.238163</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127325 36.238244</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127318 36.238374</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127670 36.238460</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128449 36.238506</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128891 36.238699</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129143 36.238949</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129662 36.238836</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129784 36.238708</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130087 36.238797</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130296 36.238866</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130861 36.239179</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131026 36.239455</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131291 36.239689</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131382 36.239848</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131647 36.240054</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131718 36.240161</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131821 36.240125</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131699 36.240300</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.132108 36.240143</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131973 36.240527</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131674 36.240833</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131564 36.240864</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131304 36.241288</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131288 36.241469</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131127 36.241688</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131166 36.241980</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131140 36.242124</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131041 36.242289</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130767 36.242396</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130435 36.242543</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130142 36.242812</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129990 36.242828</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129845 36.242917</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129703 36.243100</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129409 36.243053</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129010 36.243229</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128807 36.243449</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128794 36.243726</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.129027 36.244075</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128963 36.244177</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128660 36.244233</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128699 36.244442</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128664 36.244713</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128519 36.244959</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.128108 36.245246</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127467 36.245707</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126898 36.246183</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126882 36.246227</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.125728 36.246526</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.125518 36.246621</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.125196 36.246935</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.124637 36.248260</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.124260 36.248511</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.124051 36.248825</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.123874 36.249264</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.123871 36.249426</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.120905 36.250583</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.120286 36.251122</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.120005 36.250912</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.119804 36.250843</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.119528 36.250430</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.118840 36.250333</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.118410 36.250333</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.118147 36.250487</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.117964 36.250803</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.118161 36.251574</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.118747 36.252349</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.119057 36.252432</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.119619 36.252390</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.119693 36.252584</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.119940 36.252533</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.120169 36.252244</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.120306 36.251826</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.120460 36.251668</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.120276 36.251139</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.120912 36.250576</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.123554 36.249547</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.123755 36.250081</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.124283 36.250299</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.124880 36.250303</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126016 36.250724</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126308 36.250868</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.126824 36.250853</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.127632 36.250453</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.130792 36.250682</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131405 36.250403</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.131675 36.250577</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.132226 36.250762</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.132725 36.250943</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.133104 36.251179</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.133563 36.251327</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.134165 36.251206</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.134233 36.250946</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.134732 36.250666</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.134943 36.250485</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.135265 36.250489</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.135792 36.250396</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.136337 36.250395</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.136503 36.250307</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.137472 36.250301</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.138401 36.250416</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.138516 36.250499</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.139824 36.250837</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.140014 36.251083</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.140562 36.251324</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.141027 36.251356</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.141228 36.251421</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.141858 36.251308</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.142403 36.251512</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.143109 36.251539</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.143676 36.251404</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.144456 36.251110</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.144891 36.251165</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145414 36.251364</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.146781 36.252529</coordinate>
+</direct>
+</column>
+</controlPoint>
+</GM_LineString>
+</segment>
+</GM_Curve><name>おすすめウォーキングコース</name>
+<attribute>@番号=1,コース名=荒磯遊歩道コース,距離=約6.5km,歩数=約10800歩,所要時間=約65分,消費カロリ=約360kcal</attribute>
+</Curve>
+<Curve id="ls1">
+<GM_Curve id="gmcurve1">
+<CRS uuidref="JGD2000 / (L, B)"/>
+<proxy idref="gmcurve1"/>
+<proxy idref="_gmcurve1">
+<GM_OrientableCurve id="_gmcurve1">
+<CRS/>
+<proxy idref="gmcurve1"/>
+<proxy idref="_gmcurve1"/>
+<orientation>-</orientation>
+<primitive idref="gmcurve1"/>
+</GM_OrientableCurve>
+</proxy>
+<orientation>+</orientation>
+<primitive idref="gmcurve1"/>
+<segment>
+<GM_LineString>
+<interpolation>linear</interpolation>
+<controlPoint>
+<column>
+<direct>
+<coordinate>136.221762 36.170919</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.221544 36.170613</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.221921 36.170320</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.222545 36.170351</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.222535 36.170764</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.224000 36.170814</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.223949 36.171849</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.224140 36.174659</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.224681 36.175227</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.224653 36.175822</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.231721 36.175816</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.231676 36.172792</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.231384 36.172176</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.233957 36.172876</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.234772 36.172889</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237052 36.172356</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237206 36.172244</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.240360 36.172207</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.240427 36.171655</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.240792 36.170564</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.241149 36.170612</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.239895 36.169568</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.238830 36.169605</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.238229 36.169477</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237247 36.169000</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.236516 36.168848</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237016 36.167880</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237174 36.167734</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.236391 36.167083</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.236248 36.166819</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.236134 36.166150</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.236121 36.165872</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.236301 36.165843</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237028 36.165577</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.238004 36.164848</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.236928 36.164754</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237045 36.163825</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237314 36.163624</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.237654 36.162328</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.236759 36.162051</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.235240 36.163587</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.234560 36.164298</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.234164 36.164720</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.233748 36.165150</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.233372 36.165448</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.232812 36.166136</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.232700 36.166310</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.232466 36.166302</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.223690 36.166872</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.223495 36.169834</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.220684 36.169780</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.220768 36.170672</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.221542 36.170692</coordinate>
+</direct>
+</column>
+</controlPoint>
+</GM_LineString>
+</segment>
+</GM_Curve><name>おすすめウォーキングコース</name>
+<attribute>@番号=2,コース名=自然豊かな坂井町ウォーキングコース,距離=約5.5km,歩数=約9200歩,所要時間=約55分,消費カロリ=約300kcal</attribute>
+</Curve>
+<Curve id="ls2">
+<GM_Curve id="gmcurve2">
+<CRS uuidref="JGD2000 / (L, B)"/>
+<proxy idref="gmcurve2"/>
+<proxy idref="_gmcurve2">
+<GM_OrientableCurve id="_gmcurve2">
+<CRS/>
+<proxy idref="gmcurve2"/>
+<proxy idref="_gmcurve2"/>
+<orientation>-</orientation>
+<primitive idref="gmcurve2"/>
+</GM_OrientableCurve>
+</proxy>
+<orientation>+</orientation>
+<primitive idref="gmcurve2"/>
+<segment>
+<GM_LineString>
+<interpolation>linear</interpolation>
+<controlPoint>
+<column>
+<direct>
+<coordinate>136.140333 36.220256</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.140531 36.220539</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.140835 36.220387</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.141033 36.220258</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.141343 36.219914</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.141386 36.219845</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.142005 36.219309</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.142118 36.219214</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.142914 36.218307</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.143867 36.218807</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.144499 36.219262</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145113 36.218883</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145603 36.218535</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145769 36.218398</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145803 36.218210</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145843 36.217705</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145574 36.217588</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145089 36.217331</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.143961 36.216654</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.144899 36.215677</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145458 36.215128</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.145907 36.214718</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.146177 36.215092</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.146212 36.215322</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.146267 36.215520</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.146602 36.215870</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.146687 36.215763</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.148248 36.214948</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.148076 36.214732</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.147813 36.214441</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.149050 36.213796</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.149132 36.213780</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.150195 36.212827</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.150390 36.212483</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.150507 36.212321</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.150804 36.212091</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.151184 36.211967</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.151391 36.211703</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.151535 36.211457</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.151749 36.211204</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.151929 36.211358</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152135 36.211550</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152241 36.211594</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152221 36.211660</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152420 36.211704</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152634 36.211817</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152747 36.211943</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152801 36.212081</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152763 36.212141</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.153020 36.212475</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152760 36.212718</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.153017 36.213020</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152551 36.213342</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.152236 36.213424</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.151261 36.213977</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.150749 36.214282</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.150869 36.214421</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.150123 36.214790</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.149855 36.214860</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.149431 36.214355</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.148345 36.214901</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.149038 36.215805</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.149163 36.215945</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.149558 36.216561</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.149724 36.216785</coordinate>
+</direct>
+</column>
+</controlPoint>
+</GM_LineString>
+</segment>
+</GM_Curve><name>おすすめウォーキングコース</name>
+<attribute>@番号=3,コース名=三国の町並み眺望コース,距離=約2.5km,歩数=約4200歩,所要時間=約25分,消費カロリ=約140kcal</attribute>
+</Curve>
+<Curve id="ls3">
+<GM_Curve id="gmcurve3">
+<CRS uuidref="JGD2000 / (L, B)"/>
+<proxy idref="gmcurve3"/>
+<proxy idref="_gmcurve3">
+<GM_OrientableCurve id="_gmcurve3">
+<CRS/>
+<proxy idref="gmcurve3"/>
+<proxy idref="_gmcurve3"/>
+<orientation>-</orientation>
+<primitive idref="gmcurve3"/>
+</GM_OrientableCurve>
+</proxy>
+<orientation>+</orientation>
+<primitive idref="gmcurve3"/>
+<segment>
+<GM_LineString>
+<interpolation>linear</interpolation>
+<controlPoint>
+<column>
+<direct>
+<coordinate>136.282390 36.160165</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.282012 36.159600</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.281038 36.160023</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.277882 36.159912</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.277895 36.158698</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.277912 36.157720</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.277936 36.156658</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.277978 36.154872</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.277966 36.153047</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.279060 36.151841</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.280778 36.149954</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.280861 36.149883</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.281865 36.149924</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.282811 36.149292</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.282942 36.149163</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.283032 36.148976</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.283130 36.148816</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.283386 36.148623</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.283736 36.148432</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.283377 36.148624</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.283123 36.148816</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.283036 36.148974</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.282943 36.149164</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.282809 36.149284</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.281865 36.149929</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.280865 36.149888</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.280778 36.149959</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.280476 36.149943</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276878 36.149935</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.273089 36.150141</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272962 36.150117</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271524 36.150142</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271357 36.150139</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271184 36.150549</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271138 36.150755</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271098 36.150766</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271085 36.150857</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271113 36.150934</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271158 36.151482</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271072 36.152233</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271076 36.152273</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271447 36.152354</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271711 36.152338</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271673 36.152473</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271681 36.152538</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.271746 36.152577</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272040 36.152641</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272324 36.152763</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272471 36.152863</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272573 36.152872</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272759 36.152801</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272891 36.152690</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272824 36.152600</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.272889 36.152581</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.273205 36.152795</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.273401 36.153312</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.274156 36.153138</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.274218 36.153159</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.274334 36.153122</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.274372 36.153093</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275513 36.152846</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275666 36.152825</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275723 36.152840</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275772 36.152890</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275891 36.152891</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275896 36.153093</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275895 36.153258</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275859 36.153731</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275859 36.153860</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275968 36.154735</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276007 36.155093</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276149 36.155715</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276179 36.155849</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276203 36.155996</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276228 36.156676</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276224 36.156774</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276178 36.157179</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276061 36.157674</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.276029 36.157772</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275897 36.158125</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275673 36.158581</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275596 36.158700</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.275328 36.159105</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.274911 36.159654</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.274951 36.159712</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.274943 36.159804</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.277696 36.159901</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.277881 36.159914</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.281042 36.160024</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.282020 36.159595</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.282390 36.160166</coordinate>
+</direct>
+</column>
+</controlPoint>
+</GM_LineString>
+</segment>
+</GM_Curve><name>おすすめウォーキングコース</name>
+<attribute>@番号=4,コース名=歴史豊かな丸岡町ウォーキングコース,距離=約5.2km,歩数=約8700歩,所要時間=約52分,消費カロリ=約290kcal</attribute>
+</Curve>
+<Curve id="ls4">
+<GM_Curve id="gmcurve4">
+<CRS uuidref="JGD2000 / (L, B)"/>
+<proxy idref="gmcurve4"/>
+<proxy idref="_gmcurve4">
+<GM_OrientableCurve id="_gmcurve4">
+<CRS/>
+<proxy idref="gmcurve4"/>
+<proxy idref="_gmcurve4"/>
+<orientation>-</orientation>
+<primitive idref="gmcurve4"/>
+</GM_OrientableCurve>
+</proxy>
+<orientation>+</orientation>
+<primitive idref="gmcurve4"/>
+<segment>
+<GM_LineString>
+<interpolation>linear</interpolation>
+<controlPoint>
+<column>
+<direct>
+<coordinate>136.217208 36.130984</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.217158 36.130808</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.217349 36.130747</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.217600 36.130799</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.217381 36.129694</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.214340 36.130079</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.214508 36.131050</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.211597 36.131430</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.211805 36.132565</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.211862 36.132700</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.212788 36.133874</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.213171 36.134539</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.213328 36.134792</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.213499 36.134961</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.214360 36.135410</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.214974 36.135732</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215106 36.135704</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215212 36.135820</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215430 36.136878</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215384 36.137766</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215339 36.138753</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215295 36.139856</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215346 36.141152</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215288 36.141733</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.215062 36.142043</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.213611 36.143671</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.209291 36.143435</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.204017 36.143672</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.203361 36.143680</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.202164 36.143948</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.194438 36.144885</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.194855 36.147064</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.189030 36.147789</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.188820 36.147798</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.189038 36.148984</coordinate>
+</direct>
+</column>
+</controlPoint>
+</GM_LineString>
+</segment>
+</GM_Curve><name>おすすめウォーキングコース</name>
+<attribute>@番号=5,コース名=エンゼルランド〜ゆりの里コース,距離=約4.5km,歩数=約7500歩,所要時間=約45分,消費カロリ=約250kcal</attribute>
+</Curve>
+<Curve id="ls5">
+<GM_Curve id="gmcurve5">
+<CRS uuidref="JGD2000 / (L, B)"/>
+<proxy idref="gmcurve5"/>
+<proxy idref="_gmcurve5">
+<GM_OrientableCurve id="_gmcurve5">
+<CRS/>
+<proxy idref="gmcurve5"/>
+<proxy idref="_gmcurve5"/>
+<orientation>-</orientation>
+<primitive idref="gmcurve5"/>
+</GM_OrientableCurve>
+</proxy>
+<orientation>+</orientation>
+<primitive idref="gmcurve5"/>
+<segment>
+<GM_LineString>
+<interpolation>linear</interpolation>
+<controlPoint>
+<column>
+<direct>
+<coordinate>136.306818 36.106503</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.306745 36.106706</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.306259 36.106783</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.305701 36.106917</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.303169 36.107756</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.302677 36.107936</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.302188 36.108170</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.300819 36.108979</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.300964 36.109158</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.301216 36.109435</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.301783 36.110275</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.301869 36.110438</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.303186 36.112835</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.303267 36.112851</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.305374 36.112087</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.306759 36.111496</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.308426 36.110992</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.308471 36.111075</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.308385 36.111616</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.308423 36.111616</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.313244 36.109631</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.314206 36.109232</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.315431 36.108637</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.315898 36.108411</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.316285 36.108251</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.316721 36.108127</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.317142 36.108052</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.317504 36.108012</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.318146 36.107952</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.319268 36.107913</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.319460 36.107891</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.319336 36.107356</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.319015 36.105862</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.319062 36.105767</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.321330 36.105871</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.321428 36.105809</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.321590 36.105815</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.321752 36.105768</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.321891 36.105652</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.321944 36.105517</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.321984 36.105256</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.322168 36.105267</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.322176 36.105182</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.320746 36.105046</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.321152 36.102305</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.320743 36.105042</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.318792 36.104822</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.317378 36.104586</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.317325 36.104666</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.317066 36.104652</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.316130 36.104639</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.315818 36.104655</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.314946 36.104804</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.313806 36.105021</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.313291 36.105137</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.312164 36.105461</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.310539 36.105962</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.310072 36.106098</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.309617 36.106212</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.306899 36.106676</coordinate>
+</direct>
+</column>
+<column>
+<direct>
+<coordinate>136.306817 36.106502</coordinate>
+</direct>
+</column>
+</controlPoint>
+</GM_LineString>
+</segment>
+</GM_Curve><name>おすすめウォーキングコース</name>
+<attribute>@番号=6,コース名=坂井平野水源探訪コース（水土里の散歩道）,距離=約4.5km,歩数=約7500歩,所要時間=約45分,消費カロリ=約250kcal</attribute>
+</Curve>
+</layer>
+</dataset>
+</GI>
