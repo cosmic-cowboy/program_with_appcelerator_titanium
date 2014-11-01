@@ -2,14 +2,42 @@
 	backgroundColor:"white"
 }
 
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
+"#mapview": {
+	animate:true,
+	regionFit:true,
+	userLocation:true
 }
 
-"#label": {
-	font: {
-		fontSize: 12
-	}
+"#mapToolBar" : {
+	bottom:0,
+	borderTop:true,
+	borderBottom:false
+}
+
+".itemButton" : {
+	style : Titanium.UI.iPhone.SystemButton.BORDERED	
+}
+"#satellite" : {
+	title:"衛星",
+	type:Alloy.Globals.Map.SATELLITE_TYPE
+}
+
+"#standard" : {
+	title:"標準",
+	type:Alloy.Globals.Map.STANDARD_TYPE
+}
+
+"#hybrid" : {
+	title:"ハイブリッド",
+	type:Alloy.Globals.Map.HYBRID_TYPE
+}
+
+"#zoomin" : {
+	title:"+",
+	zoom:1
+}
+
+"#zoomout" : {
+	title:"-",
+	zoom:-1
 }
