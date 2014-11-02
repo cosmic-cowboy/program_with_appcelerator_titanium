@@ -1,0 +1,24 @@
+<Alloy>
+	<TabGroup backgroundColor="white" >
+		<Tab id="loginTab">
+			<Window class="container">
+				<Require type="view" src="LoginView" id="loginView"/>
+			</Window>
+		</Tab>
+		<Tab id="userAddTab">
+			<Window class="container">
+				<Require type="view" src="UserAddView" id="userAddView"/>
+			</Window>
+		</Tab>
+		<Tab id="postViewTab">
+			<Window class="container">
+				<Require type="view" src="PostView" id="postView"/>
+			</Window>
+		</Tab>
+		<Tab id="postTab">
+			<Window class="container">
+				<Require type="view" src="Post" id="post"/>
+			</Window>
+		</Tab>
+	</TabGroup>	
+</Alloy>
