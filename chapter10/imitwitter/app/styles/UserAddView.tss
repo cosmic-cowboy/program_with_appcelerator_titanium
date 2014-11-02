@@ -1,4 +1,30 @@
 
-".container" : {
-  
+"#accounttext" : {
+	hintText : '会社のメールアドレス',
+	keyboardType : Ti.UI.KEYBOARD_EMAIL,
+	clearButtonMode:Ti.UI.INPUT_BUTTONMODE_ONFOCUS	
+}
+
+"#passtext" : {
+	hintText : 'パスワード',
+	keyboardType : Ti.UI.ASCII,
+	passwordMask : true
+}
+
+"#passtext_conf" : {
+	hintText : 'パスワード確認',
+	keyboardType : Ti.UI.ASCII,
+	passwordMask : true	
+}
+
+"#lastnametext" : {
+	hintText : '苗字',
+	keyboardType : Ti.UI.KEYBOARD_DEFAULT,
+	clearButtonMode:Ti.UI.INPUT_BUTTONMODE_ONFOCUS		
+}
+
+"#firstNametext" : {
+	hintText : '名前',
+	keyboardType : Ti.UI.KEYBOARD_DEFAULT,
+	clearButtonMode:Ti.UI.INPUT_BUTTONMODE_ONFOCUS	
 }

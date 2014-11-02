@@ -1,6 +1,6 @@
 var emptyAlert = Titanium.UI.createAlertDialog({
 	title:'入力確認',
-	message:'パスワードが未入力です'
+	message:'未入力の項目があります'
 });
 
 Ti.App.addEventListener('login', function (account) {

@@ -1,4 +1,13 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<ScrollView class="authenticationView">
+		<TextField id="accounttext" class="imitwitterText" onFocus="button.focusField" onBlur="button.blurField"/>
+		<TextField id="passtext" class="imitwitterText" onFocus="button.focusField" onBlur="button.blurField"/>
+		<TextField id="passtext_conf" class="imitwitterText" onFocus="button.focusField" onBlur="button.blurField"/>
+
+		<TextField id="lastnametext" class="imitwitterText" onFocus="button.focusField" onBlur="button.blurField"/>
+		<TextField id="firstNametext" class="imitwitterText" onFocus="button.focusField" onBlur="button.blurField"/>
+
+		<Button id="signupbutton" onClick="signup">ユーザ登録</Button>
+
+	</ScrollView>
 </Alloy>

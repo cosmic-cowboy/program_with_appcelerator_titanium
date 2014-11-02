@@ -7,7 +7,6 @@ function login(e){
 		username : $.accountField.value,
 		password : $.passField.value
 	});
-	$.accountField.value = '';
 	$.passField.value = '';
 }
 
