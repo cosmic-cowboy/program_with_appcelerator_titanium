@@ -1,4 +1,21 @@
-
-".container" : {
-  
+"#accountField" : {
+	hintText : '会社のメールアドレス',
+	keyboardType : Ti.UI.KEYBOARD_EMAIL,
+	clearButtonMode:Ti.UI.INPUT_BUTTONMODE_ONFOCUS
 }
+
+
+"#passField" : {
+	hintText : 'パスワード',
+	keyboardType : Ti.UI.ASCII,
+	passwordMask : true
+}
+
+"#loginButton" : {
+}
+
+"#signupButton" : {
+}
+
+
+

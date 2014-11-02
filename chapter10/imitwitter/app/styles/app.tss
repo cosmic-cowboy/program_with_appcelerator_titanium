@@ -1,0 +1,22 @@
+// テキストフィールドの共通アクション
+// いずれはwidgetへ
+".imitwitterText" : {
+	font: {
+		fontSize: 16
+	},
+	autocapitalization: false,
+	textAlign: "left",
+	borderColor:"gray",
+	backgroundColor:"white",
+	paddingLeft:10,
+	top:"20",
+	width : '90%',
+	height : '30'
+}
+
+
+// 認証系の画面用（ログイン、ユーザ登録）
+".authenticationView": {
+	layout : "vertical",
+	top :  20
+}

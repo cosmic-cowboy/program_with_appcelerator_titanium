@@ -1,4 +1,9 @@
 <Alloy>
-	<View class="container">
+	<View class="authenticationView">
+		<TextField id="accountField" class="imitwitterText" onFocus="button.focusField" onBlur="button.blurField"/>
+		<TextField id="passField" class="imitwitterText" onFocus="button.focusField" onBlur="button.blurField"/>
+		<Button id="loginButton" onClick="login">ログイン</Button>
+		<Button id="signupButton" onClick="signup">ユーザ登録</Button>
+
 	</View>
 </Alloy>
