@@ -3,8 +3,8 @@
 		
 		<NavigationWindow id="masterNav">
 			<Window id="master">
-				<Label>施設一覧</Label>
-				<!-- 施設一覧 -->
+				<ListView id="listView" onItemclick="setFacilities">
+				</ListView>
 			</Window>
 		</NavigationWindow>
 		
