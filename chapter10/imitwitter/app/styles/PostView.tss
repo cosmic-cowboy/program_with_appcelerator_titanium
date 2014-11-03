@@ -1,4 +1,37 @@
+"#postButton" : {
+	systemButton : Ti.UI.iPhone.SystemButton.COMPOSE
+}
 
-".container" : {
-  
+
+"#postContainer" : {
+	width : Ti.UI.FILL,
+	height : Ti.UI.SIZE,
+	top : 6,
+	right : 11,
+	bottom : 6,
+	left : 11,
+	layout : "horizontal"
+}
+
+"#title" : {
+	top  : 10,
+	font : {
+		fontSize : 18,
+		fontWeight : "bold"
+	}
+}
+
+"#user" : {
+	top  : 10
+}
+
+"#content" : {
+	top  : 10
+}
+
+"#insertDate" : {
+	left : 5,
+	font : {
+		fontSize : 14
+	}
 }

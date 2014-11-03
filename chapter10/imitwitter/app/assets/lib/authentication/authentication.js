@@ -6,7 +6,7 @@ var emptyAlert = Titanium.UI.createAlertDialog({
 Ti.App.addEventListener('login', function (account) {
 	Ti.API.info(account);
 	if(account.username && account.password){
-
+		Ti.App.fireEvent('toView');
 	} else {
 		emptyAlert.show();
 	}
@@ -20,8 +20,7 @@ Ti.App.addEventListener('userAdd', function (account) {
 		account.password_confirmation &&
 		account.lastName &&
 		account.firstName ){
-
-
+		Ti.App.fireEvent('toView');
 	} else {
 		emptyAlert.show();
 	}

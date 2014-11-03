@@ -14,6 +14,11 @@
 	height : '30'
 }
 
+// タブのウィンドウスタイル
+".container": {
+	backgroundColor:"white",
+	tabBarHidden:true
+}
 
 // 認証系の画面用（ログイン、ユーザ登録）
 ".authenticationView": {

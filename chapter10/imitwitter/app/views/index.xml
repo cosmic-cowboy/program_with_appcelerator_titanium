@@ -11,14 +11,7 @@
 			</Window>
 		</Tab>
 		<Tab id="postViewTab">
-			<Window class="container">
-				<Require type="view" src="PostView" id="postView"/>
-			</Window>
-		</Tab>
-		<Tab id="postTab">
-			<Window class="container">
-				<Require type="view" src="Post" id="post"/>
-			</Window>
+			<Require type="view" src="PostView" id="postView"/>
 		</Tab>
 	</TabGroup>	
 </Alloy>

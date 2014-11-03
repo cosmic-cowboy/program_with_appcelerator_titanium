@@ -1,4 +1,27 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window class="container">
+		<RightNavButton>
+			<Button id="postButton" title="投稿" onClick="post" />
+		</RightNavButton>
+		<ListView id="postView" defaultItemTemplate="postTemplate">
+			<Templates>
+				<ItemTemplate name="postTemplate">
+					<View id="postContainer">
+						<Label bindId="user" id="user"></Label>
+						<Label bindId="title" id="title"></Label>
+						<Label bindId="content" id="content"></Label>
+						<Label bindId="insertDate" id="insertDate"></Label>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection dataCollection="post" dataTransform="transformFunction">
+				<ListItem template="{postTemplate}" 
+					user:text="{user}"
+					title:text="{title}"
+					content:text="{content}"
+					insertDate:text="{insertDate}"
+				/>
+			</ListSection>
+		</ListView>
+	</Window>
 </Alloy>

@@ -1,4 +1,7 @@
+"#inputTitle" : {
+	
+}
 
-".container" : {
-  
+"#inputDetail" : {
+    height: 60
 }

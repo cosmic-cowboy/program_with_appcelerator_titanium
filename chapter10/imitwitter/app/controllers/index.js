@@ -13,9 +13,4 @@ Ti.App.addEventListener('toView', function (e) {
 	$.index.setActiveTab(2);
 });
 
-
-Ti.App.addEventListener('toPost', function (e) {
-	$.index.setActiveTab(3);
-});
-
-$.index.open();
+$.index.open({animated:true});

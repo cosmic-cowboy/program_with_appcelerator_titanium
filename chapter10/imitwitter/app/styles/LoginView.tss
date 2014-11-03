@@ -4,7 +4,6 @@
 	clearButtonMode:Ti.UI.INPUT_BUTTONMODE_ONFOCUS
 }
 
-
 "#passField" : {
 	hintText : 'パスワード',
 	keyboardType : Ti.UI.ASCII,

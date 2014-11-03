@@ -1,4 +1,22 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<NavigationWindow>
+		<Window class="container" title="投稿">
+			<LeftNavButton>
+				<Button onClick="close" systemButton="CANCEL"></Button>
+			</LeftNavButton>
+			<ScrollView id="addWrap" layout="vertical">
+				<Label>タイトル</Label>
+				<TextField id="inputTitle" 
+					class="imitwitterText" 
+					onFocus="button.focusField" 
+					onBlur="button.blurField"/>
+				<Label>コンテンツ</Label>
+				<TextArea id="inputDetail" 
+					class="imitwitterText" 
+					onFocus="button.focusField" 
+					onBlur="button.blurField"/>
+				<Button id="savePost" title="投稿する" onClick="savePost"></Button>
+			</ScrollView>
+		</Window>		
+	</NavigationWindow>
 </Alloy>
